@@ -1,0 +1,264 @@
+/* This contains the styling for all the different components in this program */ 
+
+.App {
+  text-align: left;
+  height: 100%;
+
+}
+
+.Backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #B0C4DE;
+  z-index: -1;
+  overflow-y: auto;
+}
+
+.TopBar {
+  position: relative;
+  background-color: #6A5ACD;
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  justify-content: center;
+  z-index: 1;
+
+}
+
+.container {
+  height: 100vh;
+  overflow: auto;
+}
+
+#Tutorial-Button, #Trainer-Button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-family: Monaco, monospace;
+  flex-shrink: 0; /* prevent the button from shrinking */
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#Tutorial-Button:hover, #Trainer-Button:hover {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-family: Monaco, monospace;
+  flex-shrink: 0; /* prevent the button from shrinking */
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.Tutorials-Button, .Trainer-Button {
+  padding: 20px;
+  background-color: #6A5ACD;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-size: 2rem;
+  margin: 20px;
+  text-decoration: none;
+  font-family: Monaco, monospace;
+}
+
+li {
+  display: inline;
+}
+
+.Dropdowns {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 300px;
+}
+
+.Dropdowns__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Dropdowns__select {
+  margin-right: 10px;
+  width: 50%;
+}
+
+#generate-button {
+  all: unset;
+  padding: 20px;
+  background-color: #6A5ACD;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin: 20px;
+  text-decoration: none;
+  font-family: Monaco, monospace;
+  cursor: pointer;
+}
+
+.sequence-menu {
+  position: absolute;
+  top: 40%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 55vh;
+  background-color: #6A5ACD;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sequence-menu-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sequence-menu-moves {
+  overflow-y: auto;
+}
+
+.sequence-menu-move {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sequence-menu-move.highlighted {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sequence-menu-title {
+  margin-top: 0;
+}
+
+.sequence-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sequence-menu-item {
+  cursor: pointer;
+}
+
+.sequence-menu-item.selected {
+  background-color: white;
+}
+
+.Landing-Buttons {
+  padding-top: 45vh;
+}
+
+.Landing-Page {
+  background-color: #B0C4DE;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.Landing-Title {
+  font-family: Monaco, monospace;
+  color: #FFFFFF;
+  font-size: 5rem;
+  background-color: #6A5ACD;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  transform: translateY(30vh);
+}
+
+.Images {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 50%; /* Change the value to adjust the maximum width */
+}
+
+.Images img {
+  max-width: 100%;
+  height: auto;
+}
+
+#image-section {
+  width: 50%;
+  background-color: #e1f3f8;
+  border-style: solid;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sequence-dropdown-and-button {
+  position: fixed;
+  bottom: 0;
+  margin-left: 35vw;
+  margin-bottom: 10vh;
+}
+
+
+#tutorial-section{
+  display: flex;
+  width: 100%;
+  height: 40%;
+}
+
+#text-section{
+  width: 50%;
+  border-radius: .5%;
+  border-style: solid;
+  border-radius: 5%;
+}
+
+#actual-text{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tutorial-images{
+  height: 90%;
+  left: 2%;
+  top: 5%;
+  position: relative;
+}
+
+.ImagesContainer {
+  display: flex;
+  align-items: center;
+}
+
+
+.CurrentMove {
+  font-size: 50px;
+  margin-left: 77%;
+  margin-top: 10%;
+  font-weight: bold;
+  color: #6A5ACD;
+  word-wrap: break-word;
+  text-align: center;
+  max-width: 250px;
+}
+
+#difficulty-select{
+  width: 50%;
+  left: 25%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Monaco, monospace;
+}
+
+#Trainer-Header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0.67em;
+}
